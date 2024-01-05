@@ -39,4 +39,4 @@ while True:
     elif choice==5:
         break
     else:
-        print("Invalid Choice. Please Try Again")
+        print("Invalid Choice. Please Try Again\n")
