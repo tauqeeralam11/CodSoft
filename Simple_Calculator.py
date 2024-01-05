@@ -1,3 +1,4 @@
+import time
 def add(x,y):
     return x+y
 def subtract(x,y):
@@ -9,20 +10,33 @@ def division(x,y):
         return x/y
     else:
         return "Cannot Divide By Zero"
-a = "WELCOME TO SIMPLE CALCULATOR"
-b = a.center(50,"-")
-print(b,"\n")
-print("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division")
-choice = int(input("Enter Your Choice(1-4) : "))
-first_num = float(input("Please Enter Your First Number : "))
-second_num = float(input("Please Enter Your Second Number : "))
-if choice==1:
-    print(first_num,"+",second_num,"=",add(first_num,second_num))
-elif choice==2:
-    print(first_num,"-",second_num,"=",subtract(first_num,second_num))
-elif choice==3:
-    print(first_num,"x",second_num,"=",multiply(first_num,second_num))
-elif choice==4:
-    print(first_num,"/",second_num,"=",division(first_num,second_num))
-else:
-    print("Invalid Choice. Please Try Again")
+while True:
+    a = "WELCOME TO SIMPLE CALCULATOR"
+    b = a.center(50,"-")
+    print(b,"\n")
+    print("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Exit")
+    choice = int(input("Enter Your Choice(1-4) : "))
+    if choice==1:
+        first_num = float(input("Please Enter Your First Number : "))
+        second_num = float(input("Please Enter Your Second Number : "))
+        print(first_num,"+",second_num,"=",add(first_num,second_num),"\n")
+        time.sleep(2)
+    elif choice==2:
+        first_num = float(input("Please Enter Your First Number : "))
+        second_num = float(input("Please Enter Your Second Number : "))
+        print(first_num,"-",second_num,"=",subtract(first_num,second_num),"\n")
+        time.sleep(2)
+    elif choice==3:
+        first_num = float(input("Please Enter Your First Number : "))
+        second_num = float(input("Please Enter Your Second Number : "))
+        print(first_num,"x",second_num,"=",multiply(first_num,second_num),"\n")
+        time.sleep(2)
+    elif choice==4:
+        first_num = float(input("Please Enter Your First Number : "))
+        second_num = float(input("Please Enter Your Second Number : "))
+        print(first_num,"/",second_num,"=",division(first_num,second_num),"\n")
+        time.sleep(2)
+    elif choice==5:
+        break
+    else:
+        print("Invalid Choice. Please Try Again")
