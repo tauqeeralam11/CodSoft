@@ -1,2 +1,2 @@
 # CodSoft Internship Tasks
-Welcome To The CODSOFT Internship Repository.
+This repository contains all the tasks that I've completed as a Python Programming intern at CodSoft.
