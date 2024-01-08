@@ -1,4 +1,3 @@
-import time
 def add(x,y):
     return x+y
 def subtract(x,y):
@@ -20,23 +19,29 @@ while True:
         first_num = float(input("Please Enter Your First Number : "))
         second_num = float(input("Please Enter Your Second Number : "))
         print(first_num,"+",second_num,"=",add(first_num,second_num),"\n")
-        time.sleep(2)
+        q = input("<--Press Enter-->")
+        continue
     elif choice==2:
         first_num = float(input("Please Enter Your First Number : "))
         second_num = float(input("Please Enter Your Second Number : "))
         print(first_num,"-",second_num,"=",subtract(first_num,second_num),"\n")
-        time.sleep(2)
+        q = input("<--Press Enter-->")
+        continue
     elif choice==3:
         first_num = float(input("Please Enter Your First Number : "))
         second_num = float(input("Please Enter Your Second Number : "))
         print(first_num,"x",second_num,"=",multiply(first_num,second_num),"\n")
-        time.sleep(2)
+        q = input("<--Press Enter-->")
+        continue
     elif choice==4:
         first_num = float(input("Please Enter Your First Number : "))
         second_num = float(input("Please Enter Your Second Number : "))
         print(first_num,"/",second_num,"=",division(first_num,second_num),"\n")
-        time.sleep(2)
+        q = input("<--Press Enter-->")
+        continue
     elif choice==5:
         break
     else:
         print("Invalid Choice. Please Try Again\n")
+        q = input("<--Press Enter-->")
+        continue
