@@ -1,5 +1,5 @@
 # CodSoft Internship Tasks
-### This repository contains all the tasks that I've completed as a Python Programming intern at CodSoft.
+### This Repository contains all the Tasks that I've completed as a Python Programming Intern at CodSoft.
 ## Task 1 | Calculator
 - *Design a simple calculator with basic arithmetic operations.*
 - *Prompt the user to input two numbers and an operation choice.*
